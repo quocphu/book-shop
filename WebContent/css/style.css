@@ -1,5 +1,50 @@
-.header{
+body {
+	width:860px;
+	margin: auto;
+	padding:auto;
+}
+#header {
 	display: block;
 	height: 50px;
-	background-color: blue;
+}
+#header #logo{
+	display: block;
+	float: left;
+	width:40%;
+}
+#header #user-info{
+	display: block;
+	float:right;
+	width:60%;
+	text-align: right;
+}
+#container{
+	display: block;
+	height: 450px;
+}
+#container #category{
+	display: block;
+	float: left;	
+	width: 250px;
+}
+#container #content{
+	display: block;
+	float: right;	
+	width: 600px;
+}
+#footer {
+	display: block;
+	height: 50px;
+	background-color: pink;
+	text-align: center;
+}
+
+.book {
+	display:block;
+	width: 150px;
+	height: 120px;
+	float: left;
+	background-color: #CCFFCC;
+	padding: 1px;
+	margin: 1px;
 }

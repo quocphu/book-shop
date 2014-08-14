@@ -38,7 +38,14 @@
 		<filter-name>requestDumpFilter</filter-name>
 		<filter-class>org.seasar.extension.filter.RequestDumpFilter</filter-class>
 	</filter>
+	
+	<filter>
+		<filter-name>LoginFilter</filter-name>
+		<filter-class>com.app.bookshop.filter.LoginFilter</filter-class>
+	</filter>
+	
 
+	
 	<filter-mapping>
 		<filter-name>encodingfilter</filter-name>
 		<url-pattern>/*</url-pattern>
@@ -81,6 +88,10 @@
 		<dispatcher>INCLUDE</dispatcher>
 	</filter-mapping>
 
+<!-- 	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping> -->
 	<servlet>
 		<servlet-name>s2container</servlet-name>
 		<servlet-class>org.seasar.framework.container.servlet.S2ContainerServlet</servlet-class>
@@ -122,6 +133,16 @@
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 
-	
+	  <jsp-config>
+    <jsp-property-group>
+      <url-pattern>*.jsp</url-pattern>
+      <el-ignored>false</el-ignored>
+      <page-encoding>UTF-8</page-encoding>
+      <scripting-invalid>false</scripting-invalid>
+      <include-prelude>/WEB-INF/view/common/taglib-defs.jsp</include-prelude>
+      <include-prelude>/WEB-INF/view/common/var-defs.jsp</include-prelude>
+      <include-prelude>/WEB-INF/view/common/tails-defs.jsp</include-prelude>
+    </jsp-property-group>
+  </jsp-config>
 
 </web-app>
