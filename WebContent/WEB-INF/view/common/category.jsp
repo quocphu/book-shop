@@ -1,8 +1,9 @@
-<h1>Loai sach</h1>
+<h3>Loại sách</h3>
 <ul>
-	<li>Sach thieu nhi</li>
-	<li>Sach thieu nhi</li>
-	<li>Sach thieu nhi</li>
-	<li>Sach thieu nhi</li>
-	<li>Sach thieu nhi</li>
+	<c:if test="${not empty category}">
+		<c:forEach var="c" items="${category }">
+			<li><a href="product.do?categoryid=${c.id}">${c.name }</a></li>
+			
+		</c:forEach>
+	</c:if>
 </ul>

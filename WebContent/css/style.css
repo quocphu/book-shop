@@ -44,7 +44,20 @@ body {
 	width: 150px;
 	height: 120px;
 	float: left;
-	background-color: #CCFFCC;
 	padding: 1px;
 	margin: 1px;
+	
+	text-align: center;
+}
+.book img {
+	width: 140px;
+	height: 110px;
+}
+.book a, a:hover, a:active{
+	text-decoration: none;
+	color: #CCFFCC;
+}
+.book span{
+	position: relative;
+	bottom: 30px;
 }

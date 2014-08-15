@@ -88,10 +88,10 @@
 		<dispatcher>INCLUDE</dispatcher>
 	</filter-mapping>
 
-<!-- 	<filter-mapping>
+	<filter-mapping>
 		<filter-name>LoginFilter</filter-name>
 		<url-pattern>/*</url-pattern>
-	</filter-mapping> -->
+	</filter-mapping> 
 	<servlet>
 		<servlet-name>s2container</servlet-name>
 		<servlet-class>org.seasar.framework.container.servlet.S2ContainerServlet</servlet-class>

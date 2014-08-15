@@ -15,40 +15,12 @@
 	</div>
 	<div id="container">		
 		<div id="category">
-			<h1>Loai sach</h1>
-			<ul>
-				<li>Sach thieu nhi</li>
-				<li>Sach thieu nhi</li>
-				<li>Sach thieu nhi</li>
-				<li>Sach thieu nhi</li>
-				<li>Sach thieu nhi</li>
-			</ul>
+			<tiles:insert attribute="category" />
+			
 		</div>
 		<div id="content">
-			<div class="book">
-				<img src="">
-				<a href="#">Sach 1</a>
-			</div>
-			<div class="book">
-				<img src="">
-				<a href="#">Sach 1</a>
-			</div>
-			<div class="book">
-				<img src="">
-				<a href="#">Sach 1</a>
-			</div>
-			<div class="book">
-				<img src="">
-				<a href="#">Sach 1</a>
-			</div>
-			<div class="book">
-				<img src="">
-				<a href="#">Sach 1</a>
-			</div>
-			<div class="book">
-				<img src="">
-				<a href="#">Sach 1</a>
-			</div>
+			<tiles:insert attribute="content" />
+			
 		</div>
 	</div>
 	<div id="footer"><tiles:insert attribute="footer" /></div>
