@@ -5,6 +5,7 @@ import java.util.List;
 import javax.annotation.Resource;
 
 import com.app.bookshop.dao.BookDao;
+import com.app.bookshop.dto.BookDto;
 import com.app.bookshop.service.BookService;
 
 public class BookServiceImpl implements BookService {
@@ -22,6 +23,12 @@ public class BookServiceImpl implements BookService {
 	public List getBookPerPage(Integer page, Integer num) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public BookDto getBookDto(Integer id) {
+		// TODO Auto-generated method stub
+		return bookDao.getBookDtoById(id);
 	}
 
 }

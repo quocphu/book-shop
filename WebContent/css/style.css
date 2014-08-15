@@ -61,3 +61,23 @@ body {
 	position: relative;
 	bottom: 30px;
 }
+
+ .image{
+	display:block;
+	float:left;
+	with:60%;
+	overflow:hidden;
+	
+}
+ .image img{
+	heigth:250px;
+}
+.info{
+	with:40%;
+	display: block;
+	float:right;
+	text-align: left;
+}
+.none-bullet{
+	list-style-type: none;
+}
