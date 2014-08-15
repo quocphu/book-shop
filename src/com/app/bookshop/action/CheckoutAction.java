@@ -5,9 +5,10 @@ import javax.annotation.Resource;
 import org.seasar.struts.annotation.tiger.StrutsActionForward;
 
 import com.app.bookshop.comon.Constaint;
-import com.app.bookshop.dto.BookDto;
+import com.app.bookshop.dao.InvoiceDao;
 import com.app.bookshop.dto.CartDto;
-import com.app.bookshop.service.BookService;
+import com.app.bookshop.entity.Account;
+import com.app.bookshop.service.InvoiceService;
 
 public class CheckoutAction extends BaseAction {
 
@@ -15,7 +16,7 @@ public class CheckoutAction extends BaseAction {
 	public static final String SUCCESS = "/WEB-INF/view/bookshop/checkout.jsp";
 
 	@Resource
-	BookService bookService;
+	InvoiceService invoiceService;
 
 	public String execute() {
 		// Check login status
@@ -28,8 +29,11 @@ public class CheckoutAction extends BaseAction {
 		}
 
 		CartDto cart = (CartDto) req.getSession().getAttribute(Constaint.CART);
-
-		req.getSession().setAttribute(Constaint.CART, cart);
+		Account account = (Account)req.getSession().getAttribute(Constaint.LOGIN);
+	
+		Integer invoiceId = invoiceService.insertInvoice(account, cart);
+		
+		req.getSession().setAttribute(Constaint.CART, null);
 		return SUCCESS;
 	}
 }
