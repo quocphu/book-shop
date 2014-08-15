@@ -81,3 +81,27 @@ body {
 .none-bullet{
 	list-style-type: none;
 }
+
+
+
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th,td {
+	border: 1px solid black;
+	padding: 0.25rem;
+}
+
+th {
+	border-bottom: 1px solid black;
+	background: rgb(167, 201, 66);
+}
+
+tr:nth-child(odd) {
+	background: rgb(234, 242, 211);
+}
+
+tr:first-child td:last-child {
+	border-width: 0px 0px 1px 1px;
+}

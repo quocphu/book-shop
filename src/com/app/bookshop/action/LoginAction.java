@@ -45,20 +45,29 @@ public class LoginAction extends BaseAction {
 		BookDto book = bookDao.getBookDtoById(1);
 		logger.info("book1: " + book.getTitle());
 		logger.info("book1: " + book.getCategoryName());
+		
+		//req.getSession().setAttribute(Constaint.CART, null);
+		
+		if (req.getSession().getAttribute(Constaint.LOGIN) != null) {
+			logger.info("session is existed");
+			setCategory(req);
+			return SUCCESS;
+		}
+		
 		// Return login page if command == "loggin"
 		if ("login".equals(command)) {
 			logger.info("fisrt");
 			return ERROR;
 		}
 
-		if (req.getSession().getAttribute(Constaint.LOGIN) != null) {
-			setCategory(req);
-			return SUCCESS;
-		}
+	
 
 		if (loginService.checkAccount(email, password)) {
 			setCategory(req);
 			req.getSession().setAttribute(Constaint.LOGIN, loginService.getAccountByEmail(email));
+			req.getSession().setAttribute(Constaint.CART, null);
+			
+			logger.info("loggin ok");
 			return SUCCESS;
 		} else {
 			logger.info("error");

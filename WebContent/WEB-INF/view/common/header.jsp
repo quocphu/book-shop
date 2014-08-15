@@ -1,5 +1,5 @@
 <div id="logo">Logo</div>
 <div id="user-info">
 	<a href="#">${LOGIN.name }</a> | <a href="${contextPath}/logout.do">Logout</a> <br /> <a
-		href="#">Giỏ hàng: </a>30 sách | Tổng tiền: 30.000 VND 
+		href="#">Giỏ hàng: </a>${CART.itemTotal} sách | Tổng tiền: ${CART.moneyTotal} 
 </div>

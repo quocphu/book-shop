@@ -1,21 +1,26 @@
 package com.app.bookshop.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import org.seasar.dao.annotation.tiger.Bean;
 import org.seasar.dao.annotation.tiger.Relation;
 @Bean(table="Book")
-public class Book {
-	private Integer id;
-	private String code;
-	private String title;
-	private String author;
-	private Date importDate;
-	private Integer amount;
-	private Integer price;
-	private Date updateDateTime;
+public class Book implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8806825401005134749L;
+	protected Integer id;
+	protected String code;
+	protected String title;
+	protected String author;
+	protected Date importDate;
+	protected Integer amount;
+	protected Integer price;
+	protected Date updateDateTime;
 	
-	private Integer categoryID;
+	protected Integer categoryID;
 	
 	public Integer getId() {
 		return id;
