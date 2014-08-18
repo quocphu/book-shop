@@ -2,13 +2,15 @@ package com.app.bookshop.dto;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.List;
 
 public class CartDto implements Serializable{
+
+	private static final long serialVersionUID = 5429785984336096021L;
+
 	private ArrayList<BookDto> books;
 	
 	private Integer itemTotal;
-	private Double moneyTotal;
+	private Integer moneyTotal;
 	
 	public ArrayList<BookDto> getBooks() {
 		return books;
@@ -35,8 +37,8 @@ public class CartDto implements Serializable{
 		}
 		return total;
 	}
-	public Double getMoneyTotal(){
-		Double total=0.0;
+	public Integer getMoneyTotal(){
+		Integer total=0;
 		for(int i=0;i<books.size();i++){
 			total += books.get(i).getAmount()*books.get(i).getPrice();
 		}

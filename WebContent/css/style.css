@@ -5,6 +5,7 @@ body {
 }
 #header {
 	display: block;
+	background-color:#FFCCEE;
 	height: 50px;
 	background-color: #EEFFCC;
 }
@@ -85,24 +86,27 @@ body {
 
 
 
-table {
+.table table {
 	border: 1px solid black;
 	border-collapse: collapse;
 }
-th,td {
+.table th,td {
 	border: 1px solid black;
 	padding: 0.25rem;
 }
 
-th {
+.table th {
 	border-bottom: 1px solid black;
 	background: rgb(167, 201, 66);
 }
-
-tr:nth-child(odd) {
+.error-message{
+	color:red;
+	font-style: italic;
+}
+.table tr:nth-child(odd) {
 	background: rgb(234, 242, 211);
 }
 
-tr:first-child td:last-child {
+.table  tr:first-child td:last-child {
 	border-width: 0px 0px 1px 1px;
 }

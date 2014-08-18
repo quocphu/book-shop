@@ -7,6 +7,13 @@ import org.seasar.struts.annotation.tiger.StrutsActionForward;
 
 import com.app.bookshop.service.BookService;
 
+/**
+ * Content: Show detail of book
+ * 
+ * @author khong.phu
+ * @version 1.00
+ */
+
 @StrutsAction(input = BookdetailAction.DETAIL)
 public class BookdetailAction extends BaseAction {
 	@StrutsActionForward

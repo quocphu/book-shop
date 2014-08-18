@@ -12,10 +12,10 @@
 					<li>${book.categoryName }</li>
 					<li>${book.author }</li>
 					<li>Đơn giá: ${book.price}</li>
-					<li>Số lượng: <input type="text" value="1" name="amount"/></li>
-					<input type="submit" value="Mua sách này" />
+					<li>Số lượng: <input type="text" value="<c:if test="${not empty ERROR }">${ERROR }</c:if><c:if test="${empty ERROR }">1</c:if>" name="amount"/></li>
+					<c:if test="${not empty ERROR }"><li class="error-message"> Số lượng sách không đúng</li></c:if>
 				</ul>
-				
+				<input type="submit" value="Mua sách này">
 			</form>
 		</c:if>
 	</div>

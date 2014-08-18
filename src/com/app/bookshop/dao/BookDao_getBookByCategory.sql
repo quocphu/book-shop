@@ -3,5 +3,5 @@ FROM BOOK b
 INNER JOIN CATEGORY c
 ON b.CATEGORYID = c.ID
 WHERE b.STATUS = 1
-ORDER BY b.ID, c.ID
+AND b.categoryid = CAST(/*categoryid*/ as numeric)
 Limit 9

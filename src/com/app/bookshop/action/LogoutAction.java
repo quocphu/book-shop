@@ -1,7 +1,6 @@
 package com.app.bookshop.action;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
 
 import org.apache.log4j.Logger;
 import org.seasar.struts.annotation.tiger.StrutsAction;

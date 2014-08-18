@@ -11,7 +11,7 @@ public class CategoryServiceImpl implements CategoryService {
 	@Resource
 	CategoryDao categoryDao;
 	@Override
-	public List getAllCategory() {
+	public List<?> getAllCategory() {
 		// TODO Auto-generated method stub
 		return categoryDao.getAllCategory();
 	}

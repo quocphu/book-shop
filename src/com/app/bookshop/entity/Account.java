@@ -1,9 +1,15 @@
 package com.app.bookshop.entity;
 
+import java.io.Serializable;
+
 import org.seasar.dao.annotation.tiger.Bean;
 
 @Bean(table="Account")
-public class Account {
+public class Account implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2585406060024158529L;
 	private Integer id;
 	private String name;
 	private String code;
