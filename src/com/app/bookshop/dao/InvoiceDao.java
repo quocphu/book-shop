@@ -1,12 +1,9 @@
 package com.app.bookshop.dao;
 
-import java.util.Map;
-
 import org.seasar.dao.annotation.tiger.ProcedureCall;
 import org.seasar.dao.annotation.tiger.S2Dao;
 
 import com.app.bookshop.dto.InvoiceParameter;
-import com.app.bookshop.dto.TestDto;
 import com.app.bookshop.entity.Invoice;
 @S2Dao(bean=Invoice.class)
 public interface InvoiceDao {

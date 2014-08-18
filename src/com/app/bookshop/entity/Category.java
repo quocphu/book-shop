@@ -6,6 +6,8 @@ import org.seasar.dao.annotation.tiger.Bean;
 
 @Bean(table="Category")
 public class Category implements Serializable{
+
+	private static final long serialVersionUID = 8522153132698576499L;
 	private int id;
 	private String code;
 	private String name;

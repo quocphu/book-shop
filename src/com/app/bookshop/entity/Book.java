@@ -4,12 +4,9 @@ import java.io.Serializable;
 import java.util.Date;
 
 import org.seasar.dao.annotation.tiger.Bean;
-import org.seasar.dao.annotation.tiger.Relation;
 @Bean(table="Book")
 public class Book implements Serializable{
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 8806825401005134749L;
 	protected Integer id;
 	protected String code;
