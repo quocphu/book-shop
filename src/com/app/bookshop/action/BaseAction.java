@@ -10,7 +10,11 @@ import org.seasar.struts.annotation.tiger.StrutsActionForward;
 
 import com.app.bookshop.comon.Constaint;
 import com.app.bookshop.service.CategoryService;
-
+/**
+ * Content: base action
+ * @author khong.phu
+ * @version 1.00
+ */
 public class BaseAction {
 	
 	Logger logger = Logger.getLogger(getClass());
@@ -27,6 +31,7 @@ public class BaseAction {
 	CategoryService categoryService;
 
 	public void setCategory(HttpServletRequest req) {
+		@SuppressWarnings("rawtypes")
 		List category = categoryService.getAllCategory();
 		req.setAttribute("category", category);
 	}
@@ -34,4 +39,5 @@ public class BaseAction {
 	public boolean isLogined(HttpServletRequest req) {
 		return req.getSession().getAttribute(Constaint.LOGIN)!=null;
 	}
+	
 }

@@ -14,13 +14,13 @@ public class BookServiceImpl implements BookService {
 	BookDao bookDao;
 	
 	@Override
-	public List getAllBook() {
+	public List<?> getAllBook() {
 		// TODO Auto-generated method stub
 		return bookDao.getAllBookDto();
 	}
 
 	@Override
-	public List getBookPerPage(Integer page, Integer num) {
+	public List<?> getBookPerPage(Integer page, Integer num) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -32,7 +32,7 @@ public class BookServiceImpl implements BookService {
 	}
 
 	@Override
-	public List getBookByCategory(String categoryId) {
+	public List<?> getBookByCategory(String categoryId) {
 		// TODO Auto-generated method stub
 		return bookDao.getBookByCategory(categoryId);
 	}

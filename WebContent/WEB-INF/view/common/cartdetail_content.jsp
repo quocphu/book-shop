@@ -1,4 +1,4 @@
-
+<div class="table">
 <table>
 	<thead>
 		<tr>
@@ -29,5 +29,5 @@
 		</tr>
 	</tfoot>
 </table>
-
-	<a href="${contextPath}/checkout.do">Thanh toan</a>
+</div>
+	<a href="${contextPath}/checkout.do">Thanh toan</a> |  <a href="${contextPath }/books.do">Tiep tuc mua</a><br/>

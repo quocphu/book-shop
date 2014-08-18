@@ -8,7 +8,6 @@ import org.seasar.struts.annotation.tiger.StrutsActionForward;
 
 import com.app.bookshop.comon.Constaint;
 import com.app.bookshop.dao.BookDao;
-import com.app.bookshop.dto.BookDto;
 import com.app.bookshop.service.LoginService;
 
 @StrutsAction(input = LoginAction.ERROR)

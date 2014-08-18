@@ -5,7 +5,7 @@ import org.seasar.dao.annotation.tiger.S2Dao;
 
 import com.app.bookshop.entity.Account;
 /**
- * Content: Account Dao
+ * Content: get Account form database
  * @author khong.phu
  * @version 1.00
  */

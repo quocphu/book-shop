@@ -2,9 +2,11 @@ package com.app.bookshop.dto;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.List;
 
 public class CartDto implements Serializable{
+
+	private static final long serialVersionUID = 5429785984336096021L;
+
 	private ArrayList<BookDto> books;
 	
 	private Integer itemTotal;

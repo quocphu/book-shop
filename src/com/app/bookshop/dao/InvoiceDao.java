@@ -5,6 +5,12 @@ import org.seasar.dao.annotation.tiger.S2Dao;
 
 import com.app.bookshop.dto.InvoiceParameter;
 import com.app.bookshop.entity.Invoice;
+
+/**
+ * Content: get Invoice from database
+ * @author khong.phu
+ * @version 1.00
+ */
 @S2Dao(bean=Invoice.class)
 public interface InvoiceDao {
 	public int insert(Invoice invoice);

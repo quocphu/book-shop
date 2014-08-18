@@ -17,10 +17,24 @@
 		</div>
 		<div id="container">
 			<form action="login.do" method="POST">
-				<c:out value="${error}" /><br>
-				<label for="email">Email: </label> <input type="text" name="email" /><br>
-				<label for="password">Password: </label> <input type="text"
-					name="password" /><br> <input type="submit" value="Login" /><br>
+			<table> 
+			
+			<tr>
+				<td colspan="2"><c:out value="${error}" /></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="text" name="email" /></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="text" 	name="password" /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="Login" /></td>
+			</tr>
+			</table>
+				
 			</form>
 		</div>
 		<div id="footer">Footer</div>

@@ -46,7 +46,7 @@ public class InvoiceServiceImpl implements InvoiceService {
 			//Update amount of book
 			bookDao.updateAmount(cart.getBooks().get(i).getId(), cart.getBooks().get(i).getAmount());
 		}
-		return 1;
+		return invoiceId;
 	}
 
 }

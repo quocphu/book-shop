@@ -5,13 +5,12 @@ import java.util.List;
 import org.seasar.dao.annotation.tiger.Arguments;
 import org.seasar.dao.annotation.tiger.S2Dao;
 import org.seasar.dao.annotation.tiger.SqlFile;
-import org.seasar.struts.validator.annotation.tiger.Arg;
 
 import com.app.bookshop.dto.BookDto;
 import com.app.bookshop.entity.Book;
 
 /**
- * Content: Book Dao
+ * Content: get Book from database
  * @author khong.phu
  * @version 1.00
  */
@@ -24,12 +23,12 @@ public interface BookDao {
 	@Arguments("id")
 	public BookDto getBookDtoById(Integer id);
 
-	public List getAllBookDto();
+	public List<?> getAllBookDto();
 	@Arguments({"categoryId"})
-	public List getBookByCategory(String categoryId);
+	public List<?> getBookByCategory(String categoryId);
 	
 	@Arguments({"page", "num"})
-	public List getBookDtoLimit(Integer limit, Integer offset);
+	public List<?> getBookDtoLimit(Integer limit, Integer offset);
 	
 	@SqlFile
 	@Arguments({"bookId", "amount"})

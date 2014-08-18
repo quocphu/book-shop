@@ -1,5 +1,5 @@
 <h3>Loại sách</h3>
-<ul>
+<ul class="none-bullet">
 	<c:if test="${not empty category}">
 		<c:forEach var="c" items="${category }">
 			<li><a href="${contextPath}/books.do?categoryid=${c.id}">${c.name }</a></li>
