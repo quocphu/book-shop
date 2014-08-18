@@ -28,6 +28,6 @@
 			<td>${CART.moneyTotal}</td>
 		</tr>
 	</tfoot>
-</tabfle>
+</table>
 
 	<a href="${contextPath}/checkout.do">Thanh toan</a>

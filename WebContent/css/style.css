@@ -6,6 +6,7 @@ body {
 #header {
 	display: block;
 	height: 50px;
+	background-color: #EEFFCC;
 }
 #header #logo{
 	display: block;
