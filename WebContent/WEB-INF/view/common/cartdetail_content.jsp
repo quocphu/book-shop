@@ -18,7 +18,7 @@
 				<td>${book.author}</td>
 				<td>${book.price}</td>
 				<td>${book.amount}</td>
-				<td>${book.amount*book.price}</td>
+				<td>${book.amount*book.price} </td>
 			</tr>
 		</c:forEach>
 	</tbody>
