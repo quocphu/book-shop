@@ -7,12 +7,12 @@ import org.seasar.dao.annotation.tiger.Id;
 import org.seasar.dao.annotation.tiger.IdType;
 @Bean(table="INVOICE")
 public class Invoice {
-	private int id;
-	private String invoiceNo;
-	private int accountId;
-	private Date createDateTime;
-	private int total;
-	private int status;
+	protected int id;
+	protected String invoiceNo;
+	protected int accountId;
+	protected Date createDateTime;
+	protected int total;
+	protected int status;
 	
 	@Id(value=IdType.IDENTITY)
 	public int getId() {

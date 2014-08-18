@@ -1,5 +1,8 @@
 package com.app.bookshop.dao;
 
+import java.util.List;
+
+import org.seasar.dao.annotation.tiger.Arguments;
 import org.seasar.dao.annotation.tiger.ProcedureCall;
 import org.seasar.dao.annotation.tiger.S2Dao;
 
@@ -17,4 +20,7 @@ public interface InvoiceDao {
 	
 	@ProcedureCall("insertInvoice")
 	public InvoiceParameter insertInvoice(InvoiceParameter invoice);
+
+	@Arguments({"accountId"})
+	public List<?> getAllInvoice(Integer accountId);
 }

@@ -1,5 +1,7 @@
 package com.app.bookshop.service.impl;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import com.app.bookshop.dao.BookDao;
@@ -47,6 +49,12 @@ public class InvoiceServiceImpl implements InvoiceService {
 			bookDao.updateAmount(cart.getBooks().get(i).getId(), cart.getBooks().get(i).getAmount());
 		}
 		return invoiceId;
+	}
+
+	@Override
+	public List<?> getAllInvoice(Integer accountId) {
+		// TODO Auto-generated method stub
+		return invoiceDao.getAllInvoice(accountId);
 	}
 
 }

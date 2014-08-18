@@ -9,4 +9,5 @@ public class Constaint {
 	
 	public static final String AMOUNT="AMOUNT";
 	public static final String MESSAGE_AMOUNT = "So luong";
+	public static final String INVOICE = "INVOICE";
 }

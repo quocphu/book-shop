@@ -1,5 +1,7 @@
 package com.app.bookshop.service;
 
+import java.util.List;
+
 import com.app.bookshop.dto.CartDto;
 import com.app.bookshop.entity.Account;
 /**
@@ -15,4 +17,10 @@ public interface InvoiceService {
 	 * @return id of invoice is inserted
 	 */
 	public Integer insertInvoice(Account account, CartDto cart);
+	/**
+	 * Get all invoice of account
+	 * @param accountId
+	 * @return
+	 */
+	public List<?> getAllInvoice(Integer accountId);
 }
